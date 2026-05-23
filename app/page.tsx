@@ -43,17 +43,15 @@ export default function LandingPage() {
           <div className="container relative z-10 mx-auto px-4 sm:px-6 text-center">
             <div className="mx-auto max-w-4xl animate-in fade-in slide-in-from-bottom-10 duration-1000">
               <h1 className="text-balance text-5xl font-bold tracking-tight sm:text-7xl lg:text-8xl">
-                Sites Web Haute Performance <br />
-                <span className="text-primary">Qui Font Croître Votre Entreprise</span>
+                Transformez vos idées en brochures professionnelles qui font la différence
               </h1>
               <p className="mx-auto mt-8 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-                Nous créons des sites web rapides, modernes et axés sur la conversion qui transforment votre présence en
-                ligne en un puissant moteur de croissance.
+                Nous créons des brochures sur mesure, conçues pour attirer, convaincre et laisser une impression durable sur votre audience.
               </p>
               <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link href="#contact">
                   <Button size="lg" className="h-14 px-8 text-lg font-semibold bg-primary hover:bg-primary/90">
-                    Lancez Votre Projet
+                    Lancer Votre Projet
                   </Button>
                 </Link>
                 <Link href="#projects">
@@ -62,7 +60,7 @@ export default function LandingPage() {
                     variant="outline"
                     className="h-14 px-8 text-lg border-border hover:bg-accent bg-transparent"
                   >
-                    Voir Les Exemples
+                    Voir Nos Créations
                   </Button>
                 </Link>
               </div>
@@ -76,21 +74,46 @@ export default function LandingPage() {
         <section id="services" className=" ">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">Nos Services Web</h2>
-              <p className="mt-4 text-muted-foreground">Solutions expertes adaptées à vos objectifs commerciaux.</p>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">Nos Services Créatifs</h2>
+              <p className="mt-4 text-muted-foreground">Des solutions visuelles professionnelles adaptées à votre image de marque.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-1 max-w-4xl mx-auto">
               {[
                 {
-                  title: "Développement & Design Web",
-                  desc: "Sites web complets alliant design moderne et fonctionnalités avancées. Nous créons des expériences numériques sur mesure qui captivent vos visiteurs et convertissent efficacement.",
+                  title: "Social Media Design & contenu digital",
+                  desc: "Création de visuels optimisés pour les réseaux sociaux, stories et publications engageantes qui renforcent votre présence en ligne.",
                   icon: Laptop,
-                  features: [
-                    "Sites d'entreprise professionnels",
-                    "Pages d'atterrissage à haute conversion",
-                    "Design UI/UX intuitif et engageant",
-                    "Portfolios créatifs et élégants",
-                  ],
+                  features: ["Templates de publications", "Stories animées", "Guides de style pour réseaux sociaux"],
+                },
+                {
+                  title: "Branding & identité visuelle complète",
+                  desc: "Conception d'identités visuelles cohérentes : logos, palettes de couleurs, typographies et guidelines de marque.",
+                  icon: Laptop,
+                  features: ["Création de logo", "Guide de marque", "Applications visuelles"],
+                },
+                {
+                  title: "Supports publicitaires (flyers, affiches, bannières)",
+                  desc: "Conception de supports imprimés et numériques percutants pour vos campagnes et événements.",
+                  icon: Laptop,
+                  features: ["Flyers & affiches", "Bannières publicitaires", "Visuels pour campagnes"],
+                },
+                {
+                  title: "Création de brochures & catalogues",
+                  desc: "Brochures et catalogues sur mesure, structurés pour mettre en valeur vos produits et services avec élégance.",
+                  icon: Laptop,
+                  features: ["Mise en page professionnelle", "Version print & digitale", "Optimisation éditoriale"],
+                },
+                {
+                  title: "Packaging & design produit",
+                  desc: "Design d'emballages attractifs et fonctionnels qui racontent l'histoire de votre produit et séduisent le consommateur.",
+                  icon: Laptop,
+                  features: ["Maquettes produit", "Étiquettes & boîtes", "Adaptation aux contraintes techniques"],
+                },
+                {
+                  title: "Supports de communication corporate",
+                  desc: "Création de présentations, rapports annuels et documents d'entreprise au rendu soigné et professionnel.",
+                  icon: Laptop,
+                  features: ["Présentations PowerPoint", "Rapports imprimés", "Documents institutionnels"],
                 },
               ].map((service, i) => (
                 <Card
@@ -123,64 +146,61 @@ export default function LandingPage() {
         {/* Projects Grid */}
         <section id="projects" className="py-24">
           <div className="container mx-auto px-4 sm:px-6">
-            <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
+              <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
               <div className="max-w-xl">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">Projets Récents</h2>
-                <p className="mt-4 text-muted-foreground">
-                  Un aperçu des solutions haute performance que nous avons livrées.
-                </p>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">Nos Réalisations</h2>
+                <p className="mt-4 text-muted-foreground">Exemples de projets de design graphique et supports imprimés réalisés pour nos clients.</p>
               </div>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  title: "MF Béton",
-                  category: "Site industriel béton préfabriqué",
+                  title: "Brochure corporate premium",
+                  category: "Brochure d'entreprise haut de gamme",
                   id: 1,
-                  image: "/mfbeton.png",
-                  alt: "MF Béton - Excellence industrielle",
-                  url: "https://mfbeton-dz.vercel.app/",
+                  image: "/WhatsApp Image 2026-05-22 at 19.04.28.jpeg",
+                  alt: "Brochure corporate premium",
+                  url: "#",
                 },
                 {
-                  title: "KTM - Kadri Transformation Métallique",
-                  category: "Site corporate d'entreprise industrielle",
-                  id: 3,
-                  image: "/ktm.png",
-                  alt: "KTM - Transformation métallique",
-                  url: "https://www.k-tm.com/",
-                },
-                {
-                  title: "Portfolio Graphic Designer",
-                  category: "Site portfolio professionnel",
-                  id: 6,
-                  image: "/portfolio.png",
-                  alt: "Portfolio ROUABAH Zine Eddine",
-                  url: "https://mokhtefi-safwan.vercel.app/",
-                },
-                {
-                  title: "Geneltech",
-                  category: "Site corporate d'entreprise industrielle",
-                  id: 4,
-                  image: "/geneltech.png",
-                  alt: "Geneltech - Excellence Industrielle",
-                  url: "https://geneltech.vercel.app/",
-                },
-               
-                {
-                  title: "Sarl C.O.H",
-                  category: "Site corporate d'entreprise industrielle",
+                  title: "Catalogue produit moderne",
+                  category: "Catalogue produit au design épuré",
                   id: 2,
-                  image: "/coh.png",
-                  alt: "Sarl C.O.H - Solutions industrielle",
-                  url: "https://coh-six.vercel.app/",
+                  image: "/WhatsApp Image 2026-05-22 at 19.04.28 (1).jpeg",
+                  alt: "Catalogue produit moderne",
+                  url: "#",
                 },
                 {
-                  title: "Cabinet Benserai",
-                  category: "Site professionnel de conseil",
+                  title: "Branding identité visuelle",
+                  category: "Refonte d'identité visuelle complète",
+                  id: 3,
+                  image: "/WhatsApp Image 2026-05-22 at 19.04.28 (2).jpeg",
+                  alt: "Branding identité visuelle",
+                  url: "#",
+                },
+                {
+                  title: "Packaging design professionnel",
+                  category: "Design d'emballage produit",
+                  id: 4,
+                  image: "/WhatsApp Image 2026-05-22 at 19.04.28 (3).jpeg",
+                  alt: "Packaging design professionnel",
+                  url: "#",
+                },
+                {
+                  title: "Campagne réseaux sociaux",
+                  category: "Visuels de campagne pour réseaux sociaux",
                   id: 5,
-                  image: "/cabinet.png",
-                  alt: "Cabinet Benserai - Conseil professionnel",
-                  url: "https://cabinet-benserai.com/",
+                  image: "/WhatsApp Image 2026-05-22 at 19.04.29.jpeg",
+                  alt: "Campagne réseaux sociaux",
+                  url: "#",
+                },
+                {
+                  title: "Présentation corporate élégante",
+                  category: "Présentation institutionnelle soignée",
+                  id: 6,
+                  image: "/WhatsApp Image 2026-05-22 at 19.04.29 (1).jpeg",
+                  alt: "Présentation corporate élégante",
+                  url: "#",
                 },
               ].map((project) => (
                 <Link
@@ -219,9 +239,9 @@ export default function LandingPage() {
         <section id="contact" className="py-24">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="mx-auto max-w-2xl text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">Construisons Votre Site Web</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">Construisons Votre Prochaine Identité Visuelle</h2>
               <p className="mt-4 text-muted-foreground">
-                Prêt à faire passer votre présence numérique au niveau supérieur? Contactez-nous aujourd'hui.
+                Prêt à donner une image professionnelle à votre entreprise ? Contactez-nous dès aujourd’hui.
               </p>
             </div>
             <Card className="mx-auto max-w-xl border-border bg-card">
@@ -247,7 +267,7 @@ export default function LandingPage() {
               />
             </Link>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Today's Graphics... Tous droits réservés.
+              © 2026 Today’s Graphics. Tous droits réservés.
             </p>
             <div className="flex gap-6 text-sm text-muted-foreground">
               <Link href="#" className="hover:text-primary">

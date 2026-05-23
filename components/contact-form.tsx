@@ -164,12 +164,12 @@ export function ContactForm() {
         />
       </div>
 
-      {/* Domaine d'activité */}
+      {/* Type de projet */}
       <div className="grid gap-2">
-        <label className="text-sm font-medium">Domaine d'activité</label>
+        <label className="text-sm font-medium">Type de projet</label>
         <Input
           {...form.register("businessDomain")}
-          placeholder="ex. E-commerce, Conseil, Technologie"
+          placeholder="ex. Brochure, Branding, Packaging"
           className="border-input bg-background focus-visible:ring-primary"
           disabled={isSubmitting}
         />
@@ -299,6 +299,17 @@ export function ContactForm() {
           {...form.register("address")}
           placeholder="Beni mared, Blida"
           className="border-input bg-background focus-visible:ring-primary"
+          disabled={isSubmitting}
+        />
+      </div>
+
+      {/* Description du projet */}
+      <div className="grid gap-2">
+        <label className="text-sm font-medium">Description du projet</label>
+        <Textarea
+          {...form.register("message")}
+          placeholder="Décrivez brièvement vos besoins, objectifs et éléments visuels souhaités"
+          className="border-input bg-background focus-visible:ring-primary h-28"
           disabled={isSubmitting}
         />
       </div>

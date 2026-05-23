@@ -13,8 +13,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Today's Graphics... | Sites Web Haute Performance",
-  description: "Nous créons des sites web rapides, modernes et axés sur la conversion",
+  title: "Today's Graphics... | Agence de Design & Brochures",
+  description: "Agence spécialisée en design graphique, brochures, branding et supports marketing.",
   generator: "v0.app",
   icons: {
     icon: [
